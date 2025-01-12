@@ -31,7 +31,7 @@ namespace LibraryOfBabel
                 args = input?.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
                 int[] id = args.Select(int.Parse).ToArray();
-                bookId.update(id);
+                bookId.Update(id);
 
                 string text = TextGenerator.GenerateText(SeedGenerator.GenerateSeed(bookId));
                 Console.WriteLine(text);
