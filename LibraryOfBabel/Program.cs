@@ -36,10 +36,6 @@ namespace LibraryOfBabel
                 string text = TextGenerator.GenerateText(SeedGenerator.GenerateSeed(bookId));
                 Console.WriteLine(text);
             }
-
-
-
-
         }
     }
 }
