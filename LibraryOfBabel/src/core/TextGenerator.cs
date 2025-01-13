@@ -14,6 +14,11 @@ namespace LibraryOfBabel.src.core
 
         public TextGenerator() { }
 
+        /// <summary>
+        /// Generate deterministic psudo-random text dependent on seed value.
+        /// </summary>
+        /// <param name="seed">Seed Integer</param>
+        /// <returns>String of random characters</returns>
         public static string GenerateText(int seed)
         {
             Random rng = new Random(seed);
